@@ -1,3 +1,10 @@
 import { Routes } from '@angular/router';
+import { App } from './app';
 
-export const routes: Routes = [];
+export const routes: Routes = [{
+  path: "",
+  children: [{
+    path: 'page1',
+    loadComponent: () => import('./pages/page1/page1').then(c => c.Page1)
+  }]
+}];
