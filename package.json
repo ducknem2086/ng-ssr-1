@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:ng-ssr-1": "node dist/ng-ssr-1/server/server.mjs"
+    "ssr": "node dist/ng-ssr-1/server/server.mjs"
   },
   "prettier": {
     "overrides": [
